@@ -1,0 +1,25 @@
+2025-10-18 23:20:36,620 INFO    MainThread:3924852 [wandb_setup.py:_flush():81] Current SDK version is 0.22.2
+2025-10-18 23:20:36,621 INFO    MainThread:3924852 [wandb_setup.py:_flush():81] Configure stats pid to 3924852
+2025-10-18 23:20:36,621 INFO    MainThread:3924852 [wandb_setup.py:_flush():81] Loading settings from /home/lsawala/.config/wandb/settings
+2025-10-18 23:20:36,621 INFO    MainThread:3924852 [wandb_setup.py:_flush():81] Loading settings from /gpfs/home5/lsawala/farama-project/minari-dataset-generation-scripts/scripts/D4RL/antmaze/wandb/settings
+2025-10-18 23:20:36,621 INFO    MainThread:3924852 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-10-18 23:20:36,621 INFO    MainThread:3924852 [wandb_init.py:setup_run_log_directory():705] Logging user logs to /gpfs/home5/lsawala/farama-project/minari-dataset-generation-scripts/scripts/D4RL/antmaze/wandb/run-20251018_232036-cp39rgys/logs/debug.log
+2025-10-18 23:20:36,621 INFO    MainThread:3924852 [wandb_init.py:setup_run_log_directory():706] Logging internal logs to /gpfs/home5/lsawala/farama-project/minari-dataset-generation-scripts/scripts/D4RL/antmaze/wandb/run-20251018_232036-cp39rgys/logs/debug-internal.log
+2025-10-18 23:20:36,629 INFO    MainThread:3924852 [wandb_init.py:init():832] calling init triggers
+2025-10-18 23:20:36,629 INFO    MainThread:3924852 [wandb_init.py:init():837] wandb.init called with sweep_config: {}
+config: {'policy_type': 'MlpPolicy', 'total_timesteps': 61000000, 'env_id': 'GoalReachAnt-v0', 'goal_threshold': 0.2, 'forward_reward_scale': 10.0, 'n_envs': 16, 'max_episode_steps': 1000, 'checkpoint_dir': './logs/GoalAnt', 'checkpoint_filename': 'GoalAnt_model', 'model_kwargs': {'seed': 42, 'verbose': 1, 'batch_size': 256, 'buffer_size': 1000000, 'ent_coef': 'auto_0.1', 'gamma': 0.991, 'gradient_steps': 1, 'learning_rate': 0.0003, 'learning_starts': 10000, 'policy_kwargs': {'net_arch': [256, 256, 256, 256], 'activation_fn': <class 'torch.nn.modules.activation.ReLU'>}, 'tau': 0.03, 'train_freq': 1, 'use_sde': False, 'action_noise': NormalActionNoise(mu=[0.0], sigma=[0.3])}, '_wandb': {'code_path': 'code/scripts/D4RL/antmaze/train_ant.py'}}
+2025-10-18 23:20:36,629 INFO    MainThread:3924852 [wandb_init.py:init():880] starting backend
+2025-10-18 23:20:36,877 INFO    MainThread:3924852 [wandb_init.py:init():883] sending inform_init request
+2025-10-18 23:20:36,911 INFO    MainThread:3924852 [wandb_init.py:init():891] backend started and connected
+2025-10-18 23:20:36,913 INFO    MainThread:3924852 [wandb_init.py:init():961] updated telemetry
+2025-10-18 23:20:36,962 INFO    MainThread:3924852 [wandb_init.py:init():985] communicating run to backend with 90.0 second timeout
+2025-10-18 23:20:37,543 INFO    MainThread:3924852 [wandb_init.py:init():1031] run resumed
+2025-10-18 23:20:37,547 INFO    MainThread:3924852 [wandb_init.py:init():1036] starting run threads in backend
+2025-10-18 23:20:37,926 INFO    MainThread:3924852 [wandb_run.py:_console_start():2509] atexit reg
+2025-10-18 23:20:37,926 INFO    MainThread:3924852 [wandb_run.py:_redirect():2357] redirect: wrap_raw
+2025-10-18 23:20:37,927 INFO    MainThread:3924852 [wandb_run.py:_redirect():2426] Wrapping output streams.
+2025-10-18 23:20:37,927 INFO    MainThread:3924852 [wandb_run.py:_redirect():2449] Redirects installed.
+2025-10-18 23:20:37,934 INFO    MainThread:3924852 [wandb_init.py:init():1076] run started, returning control to user process
+2025-10-18 23:20:41,965 INFO    MainThread:3924852 [wandb_run.py:_tensorboard_callback():1601] tensorboard callback: runs/cp39rgys/SAC_0, True
+2025-10-18 23:20:41,971 INFO    MainThread:3924852 [wandb_watch.py:_watch():68] Watching
+2025-10-18 23:20:41,971 INFO    MainThread:3924852 [wandb_run.py:_config_callback():1392] config_cb None None {}

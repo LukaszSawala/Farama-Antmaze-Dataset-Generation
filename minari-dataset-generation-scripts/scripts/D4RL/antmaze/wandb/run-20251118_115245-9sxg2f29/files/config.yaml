@@ -1,0 +1,411 @@
+_current_progress_remaining:
+    value: 1
+_custom_logger:
+    value: "False"
+_episode_num:
+    value: 0
+_last_episode_starts:
+    value: |-
+        [ True  True  True  True  True  True  True  True  True  True  True  True
+          True  True  True  True]
+_last_obs:
+    value: |-
+        [[ 8.57579376e-01  9.82079104e-01 -1.12881240e-01 ...  0.00000000e+00
+           5.75922651e-01 -4.32082479e+00]
+         [ 6.06008876e-01  9.94602699e-01  2.36001706e-02 ...  0.00000000e+00
+          -2.97851709e-01 -2.20962524e-01]
+         [ 7.21731218e-01  9.87937979e-01 -8.77339174e-02 ...  0.00000000e+00
+           1.96606871e+00  1.86957079e+00]
+         ...
+         [ 6.65508570e-01  9.94405854e-01 -2.35562864e-03 ...  0.00000000e+00
+           4.20223256e+00 -7.68060342e+00]
+         [ 8.94240320e-01  9.96729048e-01  1.23856989e-02 ...  0.00000000e+00
+          -9.30978094e-02 -2.22008728e-02]
+         [ 8.52370101e-01  9.93398211e-01 -3.32353416e-02 ...  0.00000000e+00
+          -1.93761857e+00 -4.27865154e+00]]
+_last_original_obs:
+    value: None
+_logger:
+    value: <stable_baselines3.common.logger.Logger object at 0x14bf378a6b50>
+_n_updates:
+    value: 0
+_num_timesteps_at_start:
+    value: 0
+_stats_window_size:
+    value: 100
+_total_timesteps:
+    value: 10000000
+_vec_normalize_env:
+    value: None
+_wandb:
+    value:
+        cli_version: 0.22.2
+        code_path: code/scripts/D4RL/antmaze/train_ant.py
+        e:
+            zard4gpf54ccaybsull7ucflk18t7brr:
+                codePath: scripts/D4RL/antmaze/train_ant.py
+                codePathLocal: train_ant.py
+                cpu_count: 128
+                cpu_count_logical: 128
+                disk:
+                    /:
+                        total: "135052591104"
+                        used: "4593782784"
+                email: lukaszsawala2003@gmail.com
+                executable: /gpfs/home5/lsawala/farama-project/.venv/bin/python
+                git:
+                    commit: 16bfe2d75008ed3f6817840c7f5470ef4495c421
+                    remote: https://github.com/Farama-Foundation/minari-dataset-generation-scripts
+                host: tcn279.local.snellius.surf.nl
+                memory:
+                    total: "270239399936"
+                os: Linux-5.14.0-427.92.1.el9_4.x86_64-x86_64-with-glibc2.34
+                program: /gpfs/home5/lsawala/farama-project/minari-dataset-generation-scripts/scripts/D4RL/antmaze/train_ant.py
+                python: CPython 3.9.18
+                root: /gpfs/home5/lsawala/farama-project/minari-dataset-generation-scripts/scripts/D4RL/antmaze
+                slurm:
+                    cluster_name: snellius
+                    conf: /var/spool/slurm/slurmd/conf-cache/slurm.conf
+                    cpus_on_node: "16"
+                    eclibr: "0"
+                    ecplug: "1"
+                    erlast: sbatch
+                    ersbac: "1"
+                    export_env: ALL
+                    get_user_env: "1"
+                    gtids: "0"
+                    job_account: gusr109858
+                    job_cpus_per_node: "16"
+                    job_end_time: "1763507008"
+                    job_gid: "74840"
+                    job_id: "16429985"
+                    job_name: jobscript.sh
+                    job_nodelist: tcn279
+                    job_num_nodes: "1"
+                    job_partition: rome
+                    job_qos: normal
+                    job_start_time: "1763463147"
+                    job_uid: "75380"
+                    job_user: lsawala
+                    jobid: "16429985"
+                    localid: "0"
+                    mem_per_node: "4096"
+                    nnodes: "1"
+                    nodeid: "0"
+                    nodelist: tcn279
+                    oom_kill_step: "0"
+                    prio_process: "0"
+                    procid: "0"
+                    script_context: prolog_task
+                    step_gres: gres/cpu:0
+                    submit_dir: /gpfs/home5/lsawala/farama-project
+                    submit_host: int5.local.snellius.surf.nl
+                    task_pid: "68774"
+                    tasks_per_node: "16"
+                    topology_addr: root.ibsw16.tcn279
+                    topology_addr_pattern: switch.switch.node
+                startedAt: "2025-11-18T10:52:45.175417Z"
+                writerId: zard4gpf54ccaybsull7ucflk18t7brr
+        m: []
+        python_version: 3.9.18
+        t:
+            "1":
+                - 1
+            "2":
+                - 1
+            "3":
+                - 1
+                - 2
+                - 3
+                - 13
+                - 16
+                - 22
+                - 35
+            "4": 3.9.18
+            "5": 0.22.2
+            "12": 0.22.2
+            "13": linux-x86_64
+action_noise:
+    value: VecNoise(BaseNoise=NormalActionNoise(mu=[0.0], sigma=[0.3])), n_envs=16)
+action_space:
+    value: Box(-1.0, 1.0, (8,), float32)
+actor:
+    value: |-
+        Actor(
+          (features_extractor): FlattenExtractor(
+            (flatten): Flatten(start_dim=1, end_dim=-1)
+          )
+          (latent_pi): Sequential(
+            (0): Linear(in_features=107, out_features=256, bias=True)
+            (1): ReLU()
+            (2): Linear(in_features=256, out_features=256, bias=True)
+            (3): ReLU()
+            (4): Linear(in_features=256, out_features=256, bias=True)
+            (5): ReLU()
+            (6): Linear(in_features=256, out_features=256, bias=True)
+            (7): ReLU()
+          )
+          (mu): Linear(in_features=256, out_features=8, bias=True)
+          (log_std): Linear(in_features=256, out_features=8, bias=True)
+        )
+algo:
+    value: SAC
+batch_norm_stats:
+    value: '[]'
+batch_norm_stats_target:
+    value: '[]'
+batch_size:
+    value: 256
+buffer_size:
+    value: 1000000
+checkpoint_dir:
+    value: ./logs/GoalAnt
+checkpoint_filename:
+    value: GoalAnt_model
+critic:
+    value: |-
+        ContinuousCritic(
+          (features_extractor): FlattenExtractor(
+            (flatten): Flatten(start_dim=1, end_dim=-1)
+          )
+          (qf0): Sequential(
+            (0): Linear(in_features=115, out_features=256, bias=True)
+            (1): ReLU()
+            (2): Linear(in_features=256, out_features=256, bias=True)
+            (3): ReLU()
+            (4): Linear(in_features=256, out_features=256, bias=True)
+            (5): ReLU()
+            (6): Linear(in_features=256, out_features=256, bias=True)
+            (7): ReLU()
+            (8): Linear(in_features=256, out_features=1, bias=True)
+          )
+          (qf1): Sequential(
+            (0): Linear(in_features=115, out_features=256, bias=True)
+            (1): ReLU()
+            (2): Linear(in_features=256, out_features=256, bias=True)
+            (3): ReLU()
+            (4): Linear(in_features=256, out_features=256, bias=True)
+            (5): ReLU()
+            (6): Linear(in_features=256, out_features=256, bias=True)
+            (7): ReLU()
+            (8): Linear(in_features=256, out_features=1, bias=True)
+          )
+        )
+critic_target:
+    value: |-
+        ContinuousCritic(
+          (features_extractor): FlattenExtractor(
+            (flatten): Flatten(start_dim=1, end_dim=-1)
+          )
+          (qf0): Sequential(
+            (0): Linear(in_features=115, out_features=256, bias=True)
+            (1): ReLU()
+            (2): Linear(in_features=256, out_features=256, bias=True)
+            (3): ReLU()
+            (4): Linear(in_features=256, out_features=256, bias=True)
+            (5): ReLU()
+            (6): Linear(in_features=256, out_features=256, bias=True)
+            (7): ReLU()
+            (8): Linear(in_features=256, out_features=1, bias=True)
+          )
+          (qf1): Sequential(
+            (0): Linear(in_features=115, out_features=256, bias=True)
+            (1): ReLU()
+            (2): Linear(in_features=256, out_features=256, bias=True)
+            (3): ReLU()
+            (4): Linear(in_features=256, out_features=256, bias=True)
+            (5): ReLU()
+            (6): Linear(in_features=256, out_features=256, bias=True)
+            (7): ReLU()
+            (8): Linear(in_features=256, out_features=1, bias=True)
+          )
+        )
+device:
+    value: cpu
+ent_coef:
+    value: auto_0.1
+ent_coef_optimizer:
+    value: |-
+        Adam (
+        Parameter Group 0
+            amsgrad: False
+            betas: (0.9, 0.999)
+            capturable: False
+            decoupled_weight_decay: False
+            differentiable: False
+            eps: 1e-08
+            foreach: None
+            fused: None
+            lr: 0.0003
+            maximize: False
+            weight_decay: 0
+        )
+env:
+    value: <stable_baselines3.common.vec_env.dummy_vec_env.DummyVecEnv object at 0x14bfbdd67df0>
+env_id:
+    value: GoalReachAnt-v0
+ep_info_buffer:
+    value: deque([], maxlen=100)
+ep_success_buffer:
+    value: deque([], maxlen=100)
+forward_reward_scale:
+    value: 10
+gamma:
+    value: 0.991
+goal_threshold:
+    value: 0.2
+gradient_steps:
+    value: 1
+learning_rate:
+    value: 0.0003
+learning_starts:
+    value: 10000
+log_ent_coef:
+    value: tensor([-2.3026], requires_grad=True)
+lr_schedule:
+    value: FloatSchedule(ConstantSchedule(val=0.0003))
+max_episode_steps:
+    value: 1000
+model_kwargs:
+    value:
+        action_noise: NormalActionNoise(mu=[0.0], sigma=[0.3])
+        batch_size: 256
+        buffer_size: 1000000
+        ent_coef: auto_0.1
+        gamma: 0.991
+        gradient_steps: 1
+        learning_rate: 0.0003
+        learning_starts: 10000
+        policy_kwargs:
+            activation_fn: torch.nn.modules.activation.ReLU
+            net_arch:
+                - 256
+                - 256
+                - 256
+                - 256
+        seed: 42
+        tau: 0.03
+        train_freq: 1
+        use_sde: false
+        verbose: 1
+n_envs:
+    value: 16
+n_steps:
+    value: 1
+num_timesteps:
+    value: 0
+observation_space:
+    value: Box(-inf, inf, (107,), float64)
+optimize_memory_usage:
+    value: "False"
+policy:
+    value: |-
+        SACPolicy(
+          (actor): Actor(
+            (features_extractor): FlattenExtractor(
+              (flatten): Flatten(start_dim=1, end_dim=-1)
+            )
+            (latent_pi): Sequential(
+              (0): Linear(in_features=107, out_features=256, bias=True)
+              (1): ReLU()
+              (2): Linear(in_features=256, out_features=256, bias=True)
+              (3): ReLU()
+              (4): Linear(in_features=256, out_features=256, bias=True)
+              (5): ReLU()
+              (6): Linear(in_features=256, out_features=256, bias=True)
+              (7): ReLU()
+            )
+            (mu): Linear(in_features=256, out_features=8, bias=True)
+            (log_std): Linear(in_features=256, out_features=8, bias=True)
+          )
+          (critic): ContinuousCritic(
+            (features_extractor): FlattenExtractor(
+              (flatten): Flatten(start_dim=1, end_dim=-1)
+            )
+            (qf0): Sequential(
+              (0): Linear(in_features=115, out_features=256, bias=True)
+              (1): ReLU()
+              (2): Linear(in_features=256, out_features=256, bias=True)
+              (3): ReLU()
+              (4): Linear(in_features=256, out_features=256, bias=True)
+              (5): ReLU()
+              (6): Linear(in_features=256, out_features=256, bias=True)
+              (7): ReLU()
+              (8): Linear(in_features=256, out_features=1, bias=True)
+            )
+            (qf1): Sequential(
+              (0): Linear(in_features=115, out_features=256, bias=True)
+              (1): ReLU()
+              (2): Linear(in_features=256, out_features=256, bias=True)
+              (3): ReLU()
+              (4): Linear(in_features=256, out_features=256, bias=True)
+              (5): ReLU()
+              (6): Linear(in_features=256, out_features=256, bias=True)
+              (7): ReLU()
+              (8): Linear(in_features=256, out_features=1, bias=True)
+            )
+          )
+          (critic_target): ContinuousCritic(
+            (features_extractor): FlattenExtractor(
+              (flatten): Flatten(start_dim=1, end_dim=-1)
+            )
+            (qf0): Sequential(
+              (0): Linear(in_features=115, out_features=256, bias=True)
+              (1): ReLU()
+              (2): Linear(in_features=256, out_features=256, bias=True)
+              (3): ReLU()
+              (4): Linear(in_features=256, out_features=256, bias=True)
+              (5): ReLU()
+              (6): Linear(in_features=256, out_features=256, bias=True)
+              (7): ReLU()
+              (8): Linear(in_features=256, out_features=1, bias=True)
+            )
+            (qf1): Sequential(
+              (0): Linear(in_features=115, out_features=256, bias=True)
+              (1): ReLU()
+              (2): Linear(in_features=256, out_features=256, bias=True)
+              (3): ReLU()
+              (4): Linear(in_features=256, out_features=256, bias=True)
+              (5): ReLU()
+              (6): Linear(in_features=256, out_features=256, bias=True)
+              (7): ReLU()
+              (8): Linear(in_features=256, out_features=1, bias=True)
+            )
+          )
+        )
+policy_class:
+    value: <class 'stable_baselines3.sac.policies.SACPolicy'>
+policy_kwargs:
+    value: '{''net_arch'': [256, 256, 256, 256], ''activation_fn'': <class ''torch.nn.modules.activation.ReLU''>, ''use_sde'': False}'
+policy_type:
+    value: MlpPolicy
+replay_buffer:
+    value: <stable_baselines3.common.buffers.ReplayBuffer object at 0x14bfbdc94eb0>
+replay_buffer_class:
+    value: <class 'stable_baselines3.common.buffers.ReplayBuffer'>
+replay_buffer_kwargs:
+    value: '{}'
+sde_sample_freq:
+    value: -1
+seed:
+    value: 42
+start_time:
+    value: 1763463169410467822
+target_entropy:
+    value: -8
+target_update_interval:
+    value: 1
+tau:
+    value: 0.03
+tensorboard_log:
+    value: runs/9sxg2f29
+total_timesteps:
+    value: 10000000
+train_freq:
+    value: 'TrainFreq(frequency=1, unit=<TrainFrequencyUnit.STEP: ''step''>)'
+use_sde:
+    value: "False"
+use_sde_at_warmup:
+    value: "False"
+verbose:
+    value: 1

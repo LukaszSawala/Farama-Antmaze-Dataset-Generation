@@ -1,0 +1,70 @@
+{
+  "os": "Linux-5.14.0-427.92.1.el9_4.x86_64-x86_64-with-glibc2.34",
+  "python": "CPython 3.9.18",
+  "startedAt": "2025-11-17T22:41:02.752993Z",
+  "program": "/gpfs/home5/lsawala/farama-project/minari-dataset-generation-scripts/scripts/D4RL/antmaze/train_ant.py",
+  "codePath": "scripts/D4RL/antmaze/train_ant.py",
+  "codePathLocal": "train_ant.py",
+  "git": {
+    "remote": "https://github.com/Farama-Foundation/minari-dataset-generation-scripts",
+    "commit": "16bfe2d75008ed3f6817840c7f5470ef4495c421"
+  },
+  "email": "lukaszsawala2003@gmail.com",
+  "root": "/gpfs/home5/lsawala/farama-project/minari-dataset-generation-scripts/scripts/D4RL/antmaze",
+  "host": "tcn490.local.snellius.surf.nl",
+  "executable": "/gpfs/home5/lsawala/farama-project/.venv/bin/python",
+  "cpu_count": 128,
+  "cpu_count_logical": 128,
+  "disk": {
+    "/": {
+      "total": "135050797056",
+      "used": "3033493504"
+    }
+  },
+  "memory": {
+    "total": "270235811840"
+  },
+  "slurm": {
+    "cluster_name": "snellius",
+    "conf": "/var/spool/slurm/slurmd/conf-cache/slurm.conf",
+    "cpus_on_node": "16",
+    "eclibr": "0",
+    "ecplug": "1",
+    "erlast": "sbatch",
+    "ersbac": "1",
+    "export_env": "ALL",
+    "get_user_env": "1",
+    "gtids": "0",
+    "job_account": "gusr109858",
+    "job_cpus_per_node": "16",
+    "job_end_time": "1763463102",
+    "job_gid": "74840",
+    "job_id": "16386526",
+    "job_name": "jobscript.sh",
+    "job_nodelist": "tcn490",
+    "job_num_nodes": "1",
+    "job_partition": "rome",
+    "job_qos": "normal",
+    "job_start_time": "1763419241",
+    "job_uid": "75380",
+    "job_user": "lsawala",
+    "jobid": "16386526",
+    "localid": "0",
+    "mem_per_node": "4096",
+    "nnodes": "1",
+    "nodeid": "0",
+    "nodelist": "tcn490",
+    "oom_kill_step": "0",
+    "prio_process": "0",
+    "procid": "0",
+    "script_context": "prolog_task",
+    "step_gres": "gres/cpu:0",
+    "submit_dir": "/gpfs/home5/lsawala/farama-project",
+    "submit_host": "int4.local.snellius.surf.nl",
+    "task_pid": "3216454",
+    "tasks_per_node": "16",
+    "topology_addr": "root.ibsw10.tcn490",
+    "topology_addr_pattern": "switch.switch.node"
+  },
+  "writerId": "6lpq555e2dobyxmsx4b2e4rxnpa4fdyp"
+}

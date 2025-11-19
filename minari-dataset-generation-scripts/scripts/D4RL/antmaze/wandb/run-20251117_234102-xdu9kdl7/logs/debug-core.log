@@ -1,0 +1,6 @@
+{"time":"2025-11-17T23:41:02.941097638+01:00","level":"INFO","msg":"main: starting server","port-filename":"/scratch-local/lsawala.16386526/tmpkdi64gja/port-3216458.txt","pid":3216458,"log-level":0,"disable-analytics":false,"shutdown-on-parent-exit":false,"enable-dcgm-profiling":false}
+{"time":"2025-11-17T23:41:02.943401921+01:00","level":"INFO","msg":"server: will exit if parent process dies","ppid":3216458}
+{"time":"2025-11-17T23:41:02.943361425+01:00","level":"INFO","msg":"server: accepting connections","addr":{"Name":"/scratch-local/lsawala.16386526/wandb-3216458-3216488-2224312750/socket","Net":"unix"}}
+{"time":"2025-11-17T23:41:03.059392202+01:00","level":"INFO","msg":"connection: ManageConnectionData: new connection created","id":"1(@)"}
+{"time":"2025-11-17T23:41:03.105895934+01:00","level":"INFO","msg":"handleInformInit: received","streamId":"xdu9kdl7","id":"1(@)"}
+{"time":"2025-11-17T23:41:03.376950501+01:00","level":"INFO","msg":"handleInformInit: stream started","streamId":"xdu9kdl7","id":"1(@)"}
