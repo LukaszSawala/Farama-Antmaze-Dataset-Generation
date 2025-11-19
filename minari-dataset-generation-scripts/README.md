@@ -1,3 +1,8 @@
+# IMPORTANT NOTE
+This is the readme taken from the original repository, so it might not be up to date. The reason why I made it that way is that this repository has been made only for reference and for future adaptation to new versions of AntMaze. I am not an author of this code - I have simply redesigned the old, simple code to cover multiple types of agents and AntMaze environments. Please contact me if any issues with the code persist.
+---
+
+
 # D4RL to Minari datasets
 This repository contains the scripts to convert the [D4RL](https://github.com/Farama-Foundation/D4RL) environment datasets based on MuJoCo to [Minari](https://github.com/Farama-Foundation/Minari) datasets.
 
